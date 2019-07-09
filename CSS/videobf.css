@@ -1,0 +1,17 @@
+@charset "utf-8";
+#header{ text-align:center; padding-top:10px; }
+ .title{font-size:24px; font-family:"微软雅黑";} 
+ .auname{ font-size:18px; font-family:"微软雅黑"; color:#999;}
+#middle{ background-color:#333; padding-top:30px; float:inherit; padding-right:200px;}
+#right{
+	float: right;
+	position: absolute;
+	top: 257px;
+	left: 847px;
+	width: 311px;
+	height: 380px;
+}
+.pro{ color:#FFF; font-family:"微软雅黑"; font-size:20px; text-align:center;}
+#right ul{ list-style:none;}
+#right ul li{ line-height:54px;cursor: pointer; color:#FFF}
+#right ul li:hover{ background-color:#C33}

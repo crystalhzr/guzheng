@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>登陆</title>
+<link href="../../CSS/reg.css" rel="stylesheet" type="text/css" />
+<script language="javascript">
+ function checkform(){
+	if(checkname()&&checkpassword()&&checkpassword1()&&checksex()&&checkdept()&&checkemail()){
+		return true;
+	}else{
+		return false;
+	}
+  }
+
+//账号验证
+function checkname(){
+	var no=document.myform.txtsname;
+	if(no.value==""){
+		alert("请输入用户名！");
+		no.focus();
+		return false;
+	}
+	return true;
+  }
+//密码检验
+function checkpassword(){
+	var ps=document.myform.txtps;
+	var sno=document.myform.txtsno;
+	if(ps.value==""){
+		alert("请输入密码");
+		ps.focus();
+		return false;
+	}
+	 if(!isNaN(ps.value)) 
+		 {
+		  alert("密码不能是纯数字");
+		  ps.select();
+		  return false;
+		  }
+	  return true;
+}
+//密码确认检验
+function checkpassword1(){
+	var ps=document.myform.txtps;
+	var reps=document.myform.txtreps;
+	if(reps.value==""){
+		alert("请再次输入密码！");
+		reps.focus();
+		return false;
+	}
+		if(ps.value!=reps.value){
+		alert("两次输入的密码不同！");
+		reps.select();
+		return false;
+	 }
+	return true;	
+}
+//性别检验
+function checksex(){
+	if(document.myform.txtssex[0].checked==false && document.myform.txtssex[1].checked==false ){
+		alert("请选择性别");
+		return false;
+	}
+	  return true;
+}
+
+//学院检验
+function checkdept(){{{
+	if (document.myform.txtdept.selectedIndex==0){
+		alert("请选择身份");
+		return false;
+	}
+	    return true;
+}		no.focus();
+		return false;
+	}
+	return true;
+  }
+
+ function checkemail( )
+   {
+     var e=document.myform.txtemail.value; 
+     if (e.length==0)  //检测长度是否为0，即是否为空
+      {
+        alert("电子邮件不能为空!");
+        return false;
+       }
+     if (e.indexOf("@",0)==-1) //检测是否包含”@”符号
+       {
+         alert("电子邮件格式不正确\n必须包含@符号！");
+         return false ;
+        }
+     if (e.indexOf(".",0)==-1) //检测是否包含”.”符号
+       {
+          alert("电子邮件格式不正确\n必须包含.符号！");
+          return false ;
+       }
+      return true;   
+   }
+</script>
+
+
+</head>
+
+<body background="rgbg.jpg">
+
+<center><div class="title"><img src="ti.png" width="379" height="67"  /></div></center>
+
+<form action="reg.asp" method=post name=myform onSubmit="return checkform()">
+
+<table width="465" border="0" align="center">
+  <tr>
+    <td colspan="2" align="center"><h3>新用户注册</h3></td>
+  </tr>
+  <tr>
+    <td height="29" colspan="2">请填写以下信息</td>
+  </tr>
+    <td width="218" height="31" align="right" cl>用户名：</td>
+    <td align="left"><input type=text name=txtsname size=10 ></td>
+
+  <tr>
+    <td height="33" align="right">密码：</td>
+    <td align="left">
+    <input name=txtps type=password /></td>
+  </tr>
+  
+  <tr>
+    <td height="33" align="right">密码确认：</td>
+    <td align="left">
+    <input name=txtreps type=password /></td>
+  </tr>
+  
+  <tr>
+    <td height="33" align="right">性别：</td>
+    <td align="left">
+       <input type=radio name=txtssex value="男">男
+       <input type=radio name=txtssex value="女">女
+    </td>
+  </tr>
+   
+  <tr>
+    <td height="33" align="right">选择身份：</td>
+    <td align="left">
+     <select size="1" name="txtdept">
+	     <option value="请选择您的身份">请选择您的身份</option>
+	     <option value="古筝爱好者">古筝爱好者</option>
+		 <option value="古筝学生">古筝学生</option>
+		 <option value="古筝老师">古筝老师</option>
+		 <option value="专业圈人士">专业圈人士</option>			
+	 </select>
+    </td>
+  </tr>
+ 
+  <tr>
+    <td height="40" align="right">个人邮箱：</td>
+    <td align="left"><input type="text" name="txtemail" size="35" style="font-family: 华文中宋; font-size: 11pt"></td>
+  </tr>
+  
+  <tr>
+    <td colspan="2" align="center">
+      <input type="submit" name="button" id="button" value="注册" / width="150" height="100" size="18"></td>
+  </tr>
+  </table>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+@charset "utf-8";
+ div{ overflow:hidden;}
+ p{ text-indent:2em;}
+ #menu{
+	width: auto;
+	height: 54px;
+	background-color: #900;
+	border-color: #900;
+	padding-top: 4px;
+	padding-right: 100px;
+	margin-top: 8px;
+	padding-bottom: 4px;
+}
+
+ .title{width:1000px; heitht:70px; text-align:center;
+}
+ .content_right{
+	width: 800px;
+	margin-top: 10px;
+	margin-right: 200px;
+	font-family: "微软雅黑";
+	float: right;
+}
+.content_right table td{
+	text-align: center;
+}
+ .content_right ul{ list-style:none;}
+ .content_right ul li{ line-height:30px;cursor: pointer;   }
+
+#imgbd img:{
+text-align:center;
+cursor: pointer;  
+transition: all 0.4s;
+
+}
+#imgbd img:hover {
+transform: scale(1.2);
+
+} 
+
+#vmenu {
+	background-color:#FFC;
+	list-style-type: none;
+	width:240px;
+	text-align:center;
+	float:left;
+	margin-left:5px;
+	}
+.menuti{color:#000; font-family:"微软雅黑"; font-size:18px; text-align:center;}	
+#vmenu ul{ list-style:none; margin:0px; padding:0px;}
+#vmenu ul li{ padding:0px 8px; line-height:40px;}
+#vmenu ul li ul{ display:none;}
+#vmenu ul li:hover ul{ display:block;}
+#vmenu ul li:hover{ background:#930; color:#FFF;}
+#vmenu a:link{ text-decoration:none;}
+#vmenu a:active {text-decoration:none;color:#FFF;}
+#vmenu a:hover{text-decoration:none; color:#FFF;}
+#vmenu table td:hover{ background:#930; color:#FFF;cursor: pointer;  }
+.bgtable table tr{ text-align:center; background-color:#800000; color:#FFF}
+.bgtable table td{ text-align:center; background-color:#B30000; color:#FFF}
+
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #333;
+}
+a:hover {
+	text-decoration: underline;
+	color: #C00;
+}
+a:active {
+	text-decoration: none;
+	color: #000;
+}
+
+nav a {
+  display: block;
+}
+
+summary {
+  cursor: pointer;height:40px; text-align:center;
+}
+
+summary:-webkit-details-marker {
+  display: none;
+}
+summary:hover{ background-color:#930; color:#FFF; }
+
+.fanye{
+	position: absolute;
+	width: 521px;
+	height: 638px;
+	text-align: center;
+	left: 482px;
+	top: 218px;
+}
+.fyan{
+	position: absolute;
+	text-align: center;
+	left: 461px;
+	top: 866px;
+	width: 571px;
+	height: 56px;
+}
+.fyan a:hover{ color:#FFC;}
+
+ #footer{
+	height:95px;
+    background-color:#900;
+	clear:both;
+	text-align:center;
+	padding-top:5px;
+	font-size:12px;
+	}
+.tab{ color:#FFC; padding-top:15px; padding-right:100px;}
+.tab li{ color:#FFC}
+.tab a{ color:#FFC}
+.tab qm{ font-size:22px; font-family:"微软雅黑"; font-weight:bold;}
+.tab bt{ font-size:24px; font-family:"微软雅黑";font-weight:bold;}
+#qupumid{ background:url(../qupu/pic/qupubg.jpg); margin-top:5px;}

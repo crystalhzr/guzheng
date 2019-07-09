@@ -1,0 +1,76 @@
+@charset "utf-8";
+ div{ overflow:hidden;}
+ p{ text-indent:2em;}
+ 
+ #middle{ background:url(../pic/deng.jpg);} 
+ #menu{
+	width: auto;
+	height: 54px;
+	background-color: #900;
+	border-color: #900;
+	padding-top: 4px;
+	padding-right: 100px;
+	margin-top: 8px;
+	padding-bottom: 4px;
+}
+
+ .title{width:1000px; heitht:70px; text-align:center;
+}
+ .content_right{
+	width: 800px;
+	margin-top: 10px;
+	margin-right: 200px;
+	font-family: "微软雅黑";
+	float: right;
+	color:#FFC;
+}
+.content_right table td{
+	text-align: center;
+}
+ .content_right ul{ list-style:none;}
+ .content_right ul li{ line-height:30px;cursor: pointer;   }
+ .content_right a:link {text-decoration: none;color:#FFC;}
+ .content_right a:visited {text-decoration: none;color:#FFC;}
+ .content_right a:hover {text-decoration: underline;color:#C00;}
+ .content_right a:active {text-decoration: none;color: #FFC;}
+ .content_right h3{ text-align:left; color:#FFC;}
+#vmenu {
+	background-color:#FFC;
+	list-style-type: none;
+	width:240px;
+	text-align:center;
+	float:left;
+	margin-left:5px;
+	}
+.menuti{color:#000; font-family:"微软雅黑"; font-size:18px; text-align:center;}	
+#vmenu ul{ list-style:none; margin:0px; padding:0px;}
+#vmenu ul li{ padding:0px 8px; line-height:40px;}
+#vmenu ul li ul{ display:none;}
+#vmenu ul li:hover ul{ display:block;}
+#vmenu ul li:hover{ background:#930; color:#FFF;}
+#vmenu a:link{ text-decoration:none;}
+#vmenu a:active {text-decoration:none;color:#FFF;}
+#vmenu a:hover{text-decoration:none; color:#FFF;}
+#vmenu table td:hover{ background:#930; color:#FFF;cursor: pointer;  }
+
+nav a {
+  display: block;
+}
+
+summary {
+  cursor: pointer;height:40px; text-align:center;
+}
+
+summary:-webkit-details-marker {
+  display: none;
+}
+summary:hover{ background-color:#930; color:#FFF; }
+
+ #footer{
+	height:95px;
+    background-color:#900;
+	clear:both;
+	text-align:center;
+	padding-top:5px;
+	font-size:12px;
+	}

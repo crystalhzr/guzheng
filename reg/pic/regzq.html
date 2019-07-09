@@ -1,0 +1,286 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>注册</title>
+<script language="javascript">
+ function checkform(){
+	if(checkno()&&checkname()&&checkpassword()&&checkpassword1()&&checksex()&&checkclass()&&checklove()&&checkemail()&&checkdept()){
+		return true;
+	}else{
+		return false;
+	}
+  }
+ //学号非空+长度+合法性验证
+function checkno(){
+	var no=document.myform.txtsno;
+	if(no.value==""){
+		alert("请输入学号");
+		no.focus();
+		return false;
+	}
+	if(no.value.length!=5){
+		alert("学号长度为5位");
+		no.select();
+		return false;
+	}
+	if(isNaN(no.value)) 
+		 {
+		  alert("学号包含非法字符，只能包括数字");
+		  no.select();
+		  return false;
+		  }
+	return true;
+  }
+ 
+//账号验证
+function checkname(){
+	var no=document.myform.txtsname;
+	if(no.value==""){
+		alert("请输入用户名！");
+		no.focus();
+		return false;
+	}
+	return true;
+  }
+//密码检验
+function checkpassword(){
+	var ps=document.myform.txtps;
+	var sno=document.myform.txtsno;
+	if(ps.value==""){
+		alert("请输入密码");
+		ps.focus();
+		return false;
+	}
+	if(ps.value==sno.value){
+		alert("密码不能与学号相同");
+		ps.select();
+		return false;
+	 }
+	 if(!isNaN(ps.value)) 
+		 {
+		  alert("密码不能是纯数字");
+		  ps.select();
+		  return false;
+		  }
+	  return true;
+}
+//密码确认检验
+function checkpassword1(){
+	var ps=document.myform.txtps;
+	var reps=document.myform.txtreps;
+	if(reps.value==""){
+		alert("请再次输入密码！");
+		reps.focus();
+		return false;
+	}
+		if(ps.value!=reps.value){
+		alert("两次输入的密码不同！");
+		reps.select();
+		return false;
+	 }
+	return true;	
+}
+//性别检验
+function checksex(){
+	if(document.myform.txtssex[0].checked==false && document.myform.txtssex[1].checked==false ){
+		alert("请选择性别");
+		return false;
+	}
+	  return true;
+}
+//专业班级检验
+function checkclass(){
+	var no=document.myform.txtclass;
+	if(no.value==""){
+		alert("请输入班级！");
+//学院检验
+function checkdept(){
+	if (document.myform.txtdept.selectedIndex==0){
+		alert("请选择院系");
+		return false;
+	}
+	    return true;
+}		no.focus();
+		return false;
+	}
+	return true;
+  }
+//爱好检验
+function checklove()
+  {
+    c=0;
+	for (var i=0;i<document.myform.txtlove.length;i++)
+     {
+      if (document.myform.txtlove[i].checked==true)
+      c++;
+     }
+	if (c==0){
+	    alert("请选择个人爱好");
+		return false;
+	}
+	    return true;
+}
+
+
+ function checkemail( )
+   {
+     var e=document.myform.txtemail.value; 
+     if (e.length==0)  //检测长度是否为0，即是否为空
+      {
+        alert("电子邮件不能为空!");
+        return false;
+       }
+     if (e.indexOf("@",0)==-1) //检测是否包含”@”符号
+       {
+         alert("电子邮件格式不正确\n必须包含@符号！");
+         return false ;
+        }
+     if (e.indexOf(".",0)==-1) //检测是否包含”.”符号
+       {
+          alert("电子邮件格式不正确\n必须包含.符号！");
+          return false ;
+       }
+      return true;   
+   }
+
+
+</script>
+
+</head>
+
+<body>
+
+<form action="../reg.asp" method=post name=myform onSubmit="return checkform()">
+<table border="1" align="center" bgcolor="#D1D1D1" bordercolor="#333333">
+  <caption >
+    请填写以下信息完成注册
+ </caption>
+    <tr>
+			<td align="right" width="218">学号：</td>
+			<td>
+			<input name="txtsno" size="20" style="font-family: 华文中宋; font-size: 11pt"></td>
+	</tr>
+    <td cl height="31" align="right">用户名：</td>
+    <td align="left"><input type=text name=txtsname size=10 ></td>
+  
+  <tr>
+    <td height="33" align="right">密码：</td>
+    <td align="left">
+    <input name=txtps type=password /></td>
+  </tr>
+  
+  <tr>
+    <td height="33" align="right">密码确认：</td>
+    <td align="left">
+    <input name=txtreps type=password /></td>
+  </tr>
+  
+  <tr>
+    <td height="31" align="right">性别：</td>
+    <td align="left">
+       <input type=radio name=txtssex value="男">男
+       <input type=radio name=txtssex value="女">女
+    </td>
+  </tr>
+   
+  <tr>
+    <td height="38" align="right">出生年月：</td>
+    <td align="left">
+    <select name=y1>
+        <option value=0>请选出生年份</option>
+        <option value=1>1991年</option>
+        <option value=2>1992年</option>
+        <option value=3>1993年</option>
+        <option value=4>1994年</option>
+        <option value=5>1995年</option>
+        <option value=6>1996年</option>
+        <option value=7>1997年</option>
+        <option value=8>1998年</option>
+        <option value=9>1999年</option>
+     </select>
+     <select name=m1>
+        <option value=0>请选出生月份</option>
+        <option value=1>1月</option>
+        <option value=2>2月</option>
+        <option value=3>3月</option>
+        <option value=4>4月</option>
+        <option value=5>5月</option>
+        <option value=6>6月</option>
+        <option value=7>7月</option>
+        <option value=8>8月</option>
+        <option value=9>9月</option>
+        <option value=10>10月</option>
+        <option value=11>11月</option>
+        <option value=12>12月</option>    
+     </select>
+    </td>
+  </tr>
+   
+  <tr>
+    <td height="38" align="right">学院：</td>
+    <td align="left">
+     <select size="1" name="txtdept">
+	     <option value="请选择院系">请选择院系</option>
+	     <option value="材料学院">材料学院</option>
+		 <option value="管理学院">管理学院</option>
+		 <option value="经济学院">经济学院</option>
+		 <option value="汽车学院">汽车学院</option>
+		 <option value="交通学院">交通学院</option>
+		 <option value="外国语学院">外国语学院</option>
+		 <option value="文法学院">文法学院</option>
+		 <option value="国际学院">国际学院</option>			
+	 </select>
+    </td>
+  </tr>
+  
+  <tr>
+    <td height="40" align="right">班级：</td>
+    <td align="left">
+    <input name="txtclass" type="text" /></td>
+  </tr>
+  
+  <tr>
+    <td height="60" align="right">爱好：</td>
+    <td align="left">
+     <input type=checkbox name="txtlove" value="唱歌" >
+      唱歌
+     <input type=checkbox name="txtlove" value="跳舞" >
+      跳舞
+      <input type=checkbox name="txtlove" value="篮球" >
+      篮球
+      <input type=checkbox name="txtlove" value="跑步" >
+      跑步
+    </td>
+  </tr>
+  
+  <tr>
+    <td align="right">个人简介：</td>
+    <td align="left"><textarea name="introduction" cols="" rows=""></textarea></td>
+  </tr>
+  
+  <tr>
+    <td height="93" align="right">个人图像：</td>
+    <td align="left">
+    <input type="image" name="pic" src="../../pic/111.jpg" width="100" height="75" />
+    </td>
+  </tr>
+ 
+  <tr>
+    <td height="40" align="right">个人邮箱：</td>
+    <td align="left"><input type="text" name="txtemail" size="35" style="font-family: 华文中宋; font-size: 11pt"></td>
+  </tr>
+  
+  <tr>
+    <td height="46" align="right">
+    <input name="submit" type=submit value="提交" />    </td>
+    <td align="left">             
+    <input name="reset" type=reset value="重置" />
+    </td>
+  </tr>
+  </table>
+
+</form>
+</body>
+</html>

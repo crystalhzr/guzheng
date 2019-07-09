@@ -1,0 +1,248 @@
+@charset "utf-8";
+.playname {
+    display: block;
+    padding-top: 80px;
+    padding-left: 4px;
+    font: 14px/1.5 Tahoma, "微软雅黑";
+    color: #fff;
+    font-weight:bold;
+}
+
+.playau {
+    display: block;
+    padding-left: 4px;
+    font: 12px/1.5 Tahoma, "微软雅黑";
+    color: #cf9;
+    font-weight:bold;
+}
+
+.play1qsf_name {
+    background-image:url(../music/pic/qsf.jpg);
+    width: 220px;
+    height: 124px;
+    cursor:pointer;
+    border:1px solid #fff;
+}
+.play1qsf_name:hover {
+    border:1px solid #cf9;
+}
+.play1qsf_name:hover .ico_play1qsf{
+    background-image:url(../music/pic/ico_play.png);
+}
+
+
+.ico_play1qsf {
+	position: absolute;
+	top: 259px;
+	left: 428px;
+	width: 60px;
+	height: 59px;
+}
+
+.play1ymr_name {
+    background-image:url(../music/pic/ymr.jpg);
+    width: 220px;
+    height: 124px;
+    cursor:pointer;
+    border:1px solid #fff;
+}
+.play1ymr_name:hover {
+    border:1px solid #cf9;
+}
+.play1ymr_name:hover .ico_play1ymr{
+    background-image:url(../music/pic/ico_play.png);
+}
+
+
+.ico_play1ymr {
+	position: absolute;
+	top: 259px;
+	left: 663px;
+	width: 60px;
+	height: 59px;
+}
+
+.play1gsy_name {
+    background-image:url(../music/pic/gsy.jpg);
+    width: 220px;
+    height: 124px;
+    cursor:pointer;
+    border:1px solid #fff;
+}
+.play1gsy_name:hover {
+    border:1px solid #cf9;
+}
+.play1gsy_name:hover .ico_play1gsy{
+    background-image:url(../music/pic/ico_play.png);
+}
+
+
+.ico_play1gsy {
+	position: absolute;
+	top: 259px;
+	left: 898px;
+	width: 60px;
+	height: 59px;
+}
+
+.play2sl_name {
+    background-image:url(../music/pic/sl.jpg);
+    width: 220px;
+    height: 124px;
+    cursor:pointer;
+    border:1px solid #fff;
+}
+.play2sl_name:hover {
+    border:1px solid #cf9;
+}
+.play2sl_name:hover .ico_play2sl{
+    background-image:url(../music/pic/ico_play.png);
+}
+
+
+.ico_play2sl {
+	position: absolute;
+	top: 450px;
+	left: 428px;
+	width: 60px;
+	height: 59px;
+}
+
+
+.play2txt_name {
+    background-image:url(../music/pic/txt.jpg);
+    width: 220px;
+    height: 124px;
+    cursor:pointer;
+    border:1px solid #fff;
+}
+.play2txt_name:hover {
+    border:1px solid #cf9;
+}
+.play2txt_name:hover .ico_play2txt{
+    background-image:url(../music/pic/ico_play.png);
+}
+
+
+.ico_play2txt {
+	position: absolute;
+	top: 450px;
+	left: 663px;
+	width: 60px;
+	height: 59px;
+}
+
+.play2dlh_name {
+    background-image:url(../music/pic/dlh.jpg);
+    width: 220px;
+    height: 124px;
+    cursor:pointer;
+    border:1px solid #fff;
+}
+.play2dlh_name:hover {
+    border:1px solid #cf9;
+}
+.play2dlh_name:hover .ico_play2dlh{
+    background-image:url(../music/pic/ico_play.png);
+}
+
+
+.ico_play2dlh {
+	position: absolute;
+	top: 450px;
+	left: 898px;
+	width: 60px;
+	height: 59px;
+}
+
+.play3xjy_name {
+    background-image:url(../music/pic/xjy.jpg);
+    width: 220px;
+    height: 124px;
+    cursor:pointer;
+    border:1px solid #fff;
+}
+.play3xjy_name:hover {
+    border:1px solid #cf9;
+}
+.play3xjy_name:hover .ico_play3xjy{
+    background-image:url(../music/pic/ico_play.png);
+}
+
+
+.ico_play3xjy {
+	position: absolute;
+	top:650px;
+	left: 428px;
+	width: 60px;
+	height: 59px;
+}
+
+.play3nnw_name {
+    background-image:url(../music/pic/nnw.jpg);
+    width: 220px;
+    height: 124px;
+    cursor:pointer;
+    border:1px solid #fff;
+}
+.play3nnw_name:hover {
+    border:1px solid #cf9;
+}
+.play3nnw_name:hover .ico_play3nnw{
+    background-image:url(../music/pic/ico_play.png);
+}
+
+
+.ico_play3nnw {
+	position: absolute;
+	top: 650px;
+	left: 663px;
+	width: 60px;
+	height: 59px;
+}
+
+.play3sssb_name {
+    background-image:url(../music/pic/sssb.jpg);
+    width: 220px;
+    height: 124px;
+    cursor:pointer;
+    border:1px solid #fff;
+}
+.play3sssb_name:hover {
+    border:1px solid #cf9;
+}
+.play3sssb_name:hover .ico_play3sssb{
+    background-image:url(../music/pic/ico_play.png);
+}
+
+
+.ico_play3sssb {
+	position: absolute;
+	top: 650px;
+	left: 898px;
+	width: 60px;
+	height: 59px;
+}
+
+.play_name {
+    background-image:url(../music/pic/sze.jpg);
+    width: 220px;
+    height: 124px;
+    cursor:pointer;
+    border:1px solid #fff;
+}
+.play_name:hover {
+    border:1px solid #cf9;
+}
+.play_name:hover .ico_play{
+    background-image:url(../music/pic/ico_play.png);
+}
+
+
+.ico_play {
+	position: absolute;
+	top: 172px;
+	left: 365px;
+	width: 60px;
+	height: 60px;
+}
